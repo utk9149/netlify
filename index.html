@@ -39,30 +39,9 @@
             margin-bottom: 40px;
         }
 
-        .contact form {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .contact input, .contact textarea {
-            padding: 15px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .contact input:hover, .contact textarea:hover {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .contact input:focus, .contact textarea:focus {
-            outline: none;
-            border: 2px solid #ffcc29;
+        .contact p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
         }
 
         .contact button {
@@ -71,10 +50,11 @@
             border: none;
             color: #16213e;
             font-weight: bold;
-            font-size: 1rem;
+            font-size: 1.2rem;
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            text-transform: uppercase;
         }
 
         .contact button:hover {
@@ -243,26 +223,13 @@
         </a>
     </section>
 
-    <!-- Contact Form Section -->
+    <!-- Schedule a Call Section -->
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact">
-            <p style="display:none;">
-                <label>Don’t fill this out if you're human: <input name="bot-field"></label>
-            </p>
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
+        <h2>Schedule a Call</h2>
+        <p>Click the button below to schedule a call with us. You’ll receive a Google Meet invite after booking.</p>
+        <a href="https://cal.com/utkarsh-gupta-honchi" target="_blank">
+            <button>Schedule a Call</button>
+        </a>
     </section>
 
     <!-- Footer Section -->
