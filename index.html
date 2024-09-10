@@ -11,7 +11,6 @@
     <meta property="og:description" content="Honchi delivers cutting-edge sales strategies to drive revenue growth, enhance customer acquisition, and boost business performance.">
     <meta property="og:image" content="https://honchi.netlify.app/assets/honchi-logo.png">
     <meta property="og:url" content="https://honchi.netlify.app/">
-    <title>Honchi - Sales Acceleration Experts</title>
     <!-- Font Awesome for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -36,7 +35,7 @@
         <a href="#contact" class="cta">Schedule a Call</a>
     </header>
 
-    <!-- Hero Section with Parallax Effect -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-img-container">
             <h1>Your Strategic Partner for Sales Acceleration</h1>
@@ -45,50 +44,50 @@
         </div>
     </section>
 
-    <!-- Services Section with Icons and Fade-up Animation -->
+    <!-- Services Section -->
     <section id="services" class="services" data-aos="fade-up">
         <h2>Our Sales-Driven Solutions</h2>
         <p>At Honchi, we focus on delivering powerful sales strategies that help businesses capture new markets, engage customers, and drive measurable revenue growth.</p>
         <div class="service-cards">
             <div class="card" data-aos="zoom-in">
-                <i class="fas fa-chart-line service-icon"></i> <!-- Service Icon 1 -->
+                <i class="fas fa-chart-line service-icon"></i>
                 <h3>Sales Strategy Development</h3>
                 <p>We design tailored sales strategies that align with your business goals, driving sustainable revenue growth and market penetration.</p>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-delay="100">
-                <i class="fas fa-users service-icon"></i> <!-- Service Icon 2 -->
+                <i class="fas fa-users service-icon"></i>
                 <h3>Customer Acquisition</h3>
                 <p>Our customer acquisition programs are designed to attract, engage, and convert prospects into long-term clients for your business.</p>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fas fa-user-tie service-icon"></i> <!-- Service Icon 3 -->
+                <i class="fas fa-user-tie service-icon"></i>
                 <h3>Sales Team Optimization</h3>
                 <p>We help optimize your sales team's performance, providing the tools, processes, and training needed to close more deals and drive success.</p>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-delay="300">
-                <i class="fas fa-globe service-icon"></i> <!-- Service Icon 4 -->
+                <i class="fas fa-globe service-icon"></i>
                 <h3>Market Expansion</h3>
                 <p>Honchi specializes in helping businesses break into new markets and expand their presence with targeted sales strategies and market research.</p>
             </div>
         </div>
     </section>
 
-    <!-- Case Studies Section with Icons -->
+    <!-- Case Studies Section -->
     <section id="case-studies" class="case-studies">
         <h2>Sales Success Stories</h2>
         <p>See how Honchi has helped businesses achieve remarkable sales growth through our proven strategies and customer acquisition programs.</p>
         <div class="case-card" data-aos="fade-up">
-            <i class="fas fa-chart-pie case-icon"></i> <!-- Case Study Icon 1 -->
+            <i class="fas fa-chart-pie case-icon"></i>
             <h3>Client Alpha - Revenue Growth</h3>
             <p>We helped Client Alpha boost their annual revenue by 200% through a targeted sales strategy and an effective customer acquisition funnel.</p>
         </div>
         <div class="case-card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fas fa-building case-icon"></i> <!-- Case Study Icon 2 -->
+            <i class="fas fa-building case-icon"></i>
             <h3>Client Beta - Market Expansion</h3>
             <p>Client Beta expanded into three new markets, increasing their sales by 150% with Honchi's market research and sales team optimization programs.</p>
         </div>
         <div class="case-card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fas fa-briefcase case-icon"></i> <!-- Case Study Icon 3 -->
+            <i class="fas fa-briefcase case-icon"></i>
             <h3>Client Gamma - Sales Optimization</h3>
             <p>Honchi's sales team optimization strategy led to a 30% increase in closing rates for Client Gamma, resulting in a significant revenue uplift.</p>
         </div>
@@ -97,7 +96,12 @@
     <!-- Contact Form Section -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <form>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none;">
+                <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+            </p>
+
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
