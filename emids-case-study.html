@@ -9,44 +9,197 @@
     <title>Case Study - Emids | Honchi</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #16213e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .case-study {
+            background-color: white;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .case-study h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .case-study h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .case-study p, .case-study li {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .case-study ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .case-study ul li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .case-study ul li::before {
+            content: "\f058"; /* Font Awesome check-circle icon */
+            font-family: "Font Awesome 5 Free";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #ffcc29;
+            font-size: 24px;
+        }
+
+        .case-study a.cta {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #ffcc29;
+            color: #16213e;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .case-study a.cta:hover {
+            background-color: #ffa500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #16213e;
+            color: white;
+        }
+
+        /* Hover Effects for Subsections */
+        .case-study section:hover {
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Styling the Results Section */
+        .case-study .results-section {
+            background-color: #16213e;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .case-study .results-section p {
+            color: white;
+        }
+
+        .case-study .results-section h3 {
+            color: #ffcc29;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <div class="logo">
             <h1>Honchi</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#case-studies">Case Studies</a></li>
-                <li><a href="index.html#about">About Us</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="../index.html#case-studies">Case Studies</a></li>
+                <li><a href="../index.html#about">About Us</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="case-study">
         <h2>Emids: Achieving 150% Sales Growth with Honchi</h2>
-        <p><strong>Client Overview:</strong> Emids is a leading provider of digital transformation solutions for healthcare payers, providers, and life sciences companies.</p>
-        <p><strong>Challenge:</strong> Emids was facing a plateau in their sales growth due to an inefficient customer acquisition funnel and lack of tailored sales strategies to tap into untapped market segments.</p>
+        <p><strong>Client Overview:</strong> Emids is a renowned provider of digital transformation solutions tailored to healthcare payers, providers, and life sciences companies. Their mission is to create a seamless healthcare experience, but they faced challenges in scaling their sales and expanding into new market segments.</p>
         
-        <h3>Solutions Provided:</h3>
-        <ul>
-            <li><strong>Sales Strategy Development:</strong> We created a custom sales strategy focused on identifying high-growth opportunities in underserved market segments.</li>
-            <li><strong>Customer Acquisition Optimization:</strong> We optimized their customer acquisition funnel, leading to a more efficient lead nurturing process and improved conversion rates.</li>
-            <li><strong>Sales Team Training:</strong> We provided comprehensive training for the sales team to ensure they were equipped with the necessary skills and tools to close deals effectively.</li>
-        </ul>
+        <section>
+            <h3><i class="fas fa-exclamation-triangle"></i> The Challenge</h3>
+            <p>Despite being a leader in healthcare solutions, Emids found it difficult to maintain consistent sales growth due to several issues:</p>
+            <ul>
+                <li><strong>Weak Customer Acquisition Funnel:</strong> The company’s acquisition funnel led to high drop-off rates and low conversions. Their existing processes weren’t optimized for capturing and nurturing leads effectively.</li>
+                <li><strong>Lack of Market Segmentation:</strong> Emids wasn’t targeting the right high-growth segments, which led to missed opportunities in both established and emerging markets.</li>
+                <li><strong>Sales Team Misalignment:</strong> The sales team needed better training to align with Emids’ strategic goals, resulting in lower-than-expected deal closures and revenue growth.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h3><i class="fas fa-lightbulb"></i> Solutions Provided</h3>
+            <p>To overcome these challenges, Honchi implemented a multi-pronged sales strategy to help Emids regain momentum and foster growth:</p>
+            <ul>
+                <li><strong>Sales Strategy Development:</strong> We worked with Emids to devise a tailored sales strategy focused on market segmentation. By analyzing data, we identified high-value, under-served markets and aligned Emids’ sales efforts accordingly.</li>
+                <li><strong>Optimizing Customer Acquisition:</strong> Honchi re-engineered the customer acquisition funnel, introducing automation tools and lead nurturing techniques. This helped to improve the conversion rates significantly at each stage of the funnel.</li>
+                <li><strong>Sales Team Training & Empowerment:</strong> We provided in-depth sales training that helped Emids' sales team improve their negotiation skills, deal closure techniques, and client management processes.</li>
+                <li><strong>Data-Driven Sales Forecasting:</strong> Using analytics and sales forecasting tools, Honchi helped Emids make informed decisions about market trends, optimizing their sales performance in real-time.</li>
+            </ul>
+        </section>
 
-        <h3>Results:</h3>
-        <p>With our strategic sales initiatives, Emids saw a 150% increase in sales within 12 months. The revamped customer acquisition funnel significantly improved the sales conversion rate, while the enhanced sales team performance led to a consistent revenue increase.</p>
-        
-        <a href="index.html" class="cta">Go Back</a>
+        <section class="results-section">
+            <h3><i class="fas fa-trophy"></i> Results</h3>
+            <p>As a result of Honchi's strategic interventions, Emids saw significant growth across key performance metrics:</p>
+            <ul>
+                <li><strong>150% Sales Growth:</strong> Within just 12 months, Emids experienced a 150% increase in sales, far exceeding their initial projections.</li>
+                <li><strong>30% Increase in Lead Conversion Rates:</strong> By optimizing the customer acquisition funnel, we helped Emids increase their lead-to-client conversion rate by 30%.</li>
+                <li><strong>25% Improvement in Sales Team Efficiency:</strong> The sales training and empowerment initiatives resulted in a 25% improvement in the overall efficiency of the sales team, allowing them to close deals faster and more effectively.</li>
+                <li><strong>Expanded Market Reach:</strong> Emids was able to penetrate new market segments, including previously untapped regions, allowing them to expand their customer base by 20%.</li>
+            </ul>
+        </section>
+
+        <a href="../index.html" class="cta">Go Back</a>
     </section>
 
     <footer>
         <p>&copy; 2024 Honchi</p>
     </footer>
+
 </body>
 </html>
