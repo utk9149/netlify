@@ -9,11 +9,12 @@
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Honchi - Sales Acceleration Experts">
     <meta property="og:description" content="Honchi delivers cutting-edge sales strategies to drive revenue growth, enhance customer acquisition, and boost business performance.">
-    <meta property="og:image" content="https://honchi.netlify.app/assets/honchi-logo.png"> <!-- Replace this with a valid URL of your logo -->
+    <meta property="og:image" content="https://honchi.netlify.app/assets/honchi-logo.png">
     <meta property="og:url" content="https://honchi.netlify.app/">
     <title>Honchi - Sales Acceleration Experts</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
@@ -33,62 +34,59 @@
         <a href="#contact" class="cta">Schedule a Call</a>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Parallax Effect -->
     <section id="home" class="hero">
-        <!-- Hero Image -->
         <div class="hero-img-container">
-            <img src="https://images.unsplash.com/photo-1556742400-b5e93b09e071" alt="Sales Strategy" class="hero-img">
+            <h1>Your Strategic Partner for Sales Acceleration</h1>
+            <p>Honchi delivers cutting-edge sales strategies to drive revenue growth, enhance customer acquisition, and boost business performance.</p>
+            <a href="#contact" class="cta">Get a Free Consultation</a>
         </div>
-        <h1>Your Strategic Partner for Sales Acceleration</h1>
-        <p>Honchi delivers cutting-edge sales strategies to drive revenue growth, enhance customer acquisition, and boost business performance.</p>
-        <a href="#contact" class="cta">Get a Free Consultation</a>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Services Section with Fade-up Animation -->
+    <section id="services" class="services" data-aos="fade-up">
         <h2>Our Sales-Driven Solutions</h2>
         <p>At Honchi, we focus on delivering powerful sales strategies that help businesses capture new markets, engage customers, and drive measurable revenue growth.</p>
-        <!-- Service Image -->
         <div class="services-img-container">
             <img src="https://images.unsplash.com/photo-1556740720-1a74e7ae6b10" alt="Sales Team" class="services-img">
         </div>
         <div class="service-cards">
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
                 <h3>Sales Strategy Development</h3>
                 <p>We design tailored sales strategies that align with your business goals, driving sustainable revenue growth and market penetration.</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
                 <h3>Customer Acquisition</h3>
                 <p>Our customer acquisition programs are designed to attract, engage, and convert prospects into long-term clients for your business.</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200">
                 <h3>Sales Team Optimization</h3>
                 <p>We help optimize your sales team's performance, providing the tools, processes, and training needed to close more deals and drive success.</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
                 <h3>Market Expansion</h3>
                 <p>Honchi specializes in helping businesses break into new markets and expand their presence with targeted sales strategies and market research.</p>
             </div>
         </div>
     </section>
 
-    <!-- Case Studies Section -->
+    <!-- Case Studies Section with Overlay Text -->
     <section id="case-studies" class="case-studies">
         <h2>Sales Success Stories</h2>
         <p>See how Honchi has helped businesses achieve remarkable sales growth through our proven strategies and customer acquisition programs.</p>
-        <!-- Case Study Image -->
         <div class="case-studies-img-container">
             <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Client Growth" class="case-studies-img">
+            <div class="overlay-text">Helping Businesses Grow</div>
         </div>
-        <div class="case-card">
+        <div class="case-card" data-aos="fade-up">
             <h3>Client Alpha - Revenue Growth</h3>
             <p>We helped Client Alpha boost their annual revenue by 200% through a targeted sales strategy and an effective customer acquisition funnel.</p>
         </div>
-        <div class="case-card">
+        <div class="case-card" data-aos="fade-up" data-aos-delay="100">
             <h3>Client Beta - Market Expansion</h3>
             <p>Client Beta expanded into three new markets, increasing their sales by 150% with Honchi's market research and sales team optimization programs.</p>
         </div>
-        <div class="case-card">
+        <div class="case-card" data-aos="fade-up" data-aos-delay="200">
             <h3>Client Gamma - Sales Optimization</h3>
             <p>Honchi's sales team optimization strategy led to a 30% increase in closing rates for Client Gamma, resulting in a significant revenue uplift.</p>
         </div>
@@ -117,5 +115,10 @@
         <a href="#">Twitter</a> | <a href="#">LinkedIn</a> | <a href="#">Facebook</a>
         <p>&copy; 2024 Honchi</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
