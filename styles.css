@@ -68,11 +68,10 @@ header ul li a:hover {
     transform: scale(1.1);
 }
 
-/* Hero Section with Parallax Effect */
+/* Hero Section */
 .hero {
     height: 100vh;
-    background: url('https://images.unsplash.com/photo-1556742400-b5e93b09e071') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #16213e;
     color: white;
     display: flex;
     align-items: center;
@@ -82,4 +81,146 @@ header ul li a:hover {
 
 .hero h1 {
     font-size: 52px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #d9d9d9;
+}
+
+/* Section Styles */
+section {
+    padding: 100px 5%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #16213e;
+}
+
+section p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #555;
+}
+
+/* Service Cards */
+.service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 300px;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #16213e;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Service Icons */
+.service-icon {
+    font-size: 48px;
+    color: #ffcc29;
+    margin-bottom: 20px;
+}
+
+/* Case Cards */
+.case-card {
+    background-color: #ffcc29;
+    color: #1a1a2e;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 300px;
+}
+
+.case-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.case-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.case-card p {
+    font-size: 16px;
+    color: #1a1a2e;
+}
+
+/* Case Study Icons */
+.case-icon {
+    font-size: 48px;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffcc29;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+footer a:hover {
+    color: #ffa500;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .card, .case-card {
+        flex: 1 1 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
