@@ -148,16 +148,28 @@ section p {
     margin-bottom: 20px;
 }
 
-/* Case Cards */
+/* Case Studies Section */
+.case-studies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .case-card {
     background-color: #ffcc29;
     color: #1a1a2e;
-    padding: 30px;
+    width: 180px;
+    height: 180px;
     margin: 15px;
-    border-radius: 20px;
+    border-radius: 50%; /* Circular shape */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .case-card:hover {
@@ -166,47 +178,23 @@ section p {
 }
 
 .case-card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .case-card p {
-    font-size: 16px;
+    font-size: 14px;
     color: #1a1a2e;
+    display: none;
 }
 
 /* Case Study Icons */
 .case-icon {
     font-size: 48px;
     color: #1a1a2e;
-    margin-bottom: 20px;
 }
 
-/* Footer */
-footer {
-    background-color: #1a1a2e;
-    color: white;
-    padding: 30px;
-    text-align: center;
-}
-
-footer a {
-    color: #ffcc29;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 16px;
-}
-
-footer a:hover {
-    color: #ffa500;
-}
-
-footer p {
-    margin: 5px;
-    font-size: 14px;
-}
-
-/* Responsive Design */
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 36px;
@@ -216,11 +204,20 @@ footer p {
         font-size: 18px;
     }
 
-    .card, .case-card {
-        flex: 1 1 100%;
+    .case-studies {
+        flex-direction: column; /* Stack vertically on smaller screens */
     }
 
-    form {
-        width: 100%;
+    .case-card {
+        width: 140px;
+        height: 140px;
+    }
+
+    .case-card h3 {
+        font-size: 14px;
+    }
+
+    .case-icon {
+        font-size: 36px;
     }
 }
