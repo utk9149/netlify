@@ -8,7 +8,7 @@
     <meta name="author" content="Honchi">
     <title>Case Study - Emids | Honchi</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         /* Global Styles */
         body {
@@ -32,18 +32,33 @@
             margin-top: 40px;
         }
 
+        /* Box Section for Depth */
+        .box {
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
         /* Headings */
         h1 {
             font-size: 2.5rem;
             font-weight: 700;
             color: #222;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             text-align: center;
         }
 
         h2 {
             font-size: 1.8rem;
-            color: #333;
+            color: #0077cc;
             margin-top: 30px;
             margin-bottom: 10px;
             font-weight: 600;
@@ -70,14 +85,10 @@
             color: #111;
         }
 
-        /* Blockquotes for Quotes */
-        blockquote {
-            background-color: #f0f4f7;
-            border-left: 5px solid #0077cc;
-            margin: 20px 0;
-            padding: 10px 20px;
-            font-style: italic;
-            color: #333;
+        /* Icons */
+        i {
+            color: #0077cc;
+            margin-right: 8px;
         }
 
         /* List Styles */
@@ -88,7 +99,18 @@
 
         ul li {
             margin-bottom: 10px;
-            color: #444;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ul li::before {
+            content: "\f058"; /* Font Awesome check-circle icon */
+            font-family: "Font Awesome 5 Free";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #0077cc;
+            font-size: 18px;
         }
 
         /* Call to Action Buttons */
@@ -107,6 +129,19 @@
         .cta:hover {
             background-color: #005fa3;
             cursor: pointer;
+        }
+
+        /* Results Section */
+        .results-section {
+            background-color: #0077cc;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .results-section ul li::before {
+            color: #ffcc29;
         }
 
         /* Media Queries for Responsiveness */
@@ -158,47 +193,6 @@
             text-decoration: none;
             font-size: 18px;
         }
-
-        .case-study {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 30px;
-        }
-
-        .case-study h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-
-        .case-study h3 {
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-
-        .case-study ul li::before {
-            content: "\f058"; /* Font Awesome check-circle icon */
-            font-family: "Font Awesome 5 Free";
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #ffcc29;
-            font-size: 24px;
-        }
-
-        .results-section {
-            background-color: #16213e;
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        .results-section p {
-            color: white;
-        }
-
-        .results-section h3 {
-            color: #ffcc29;
-        }
     </style>
 </head>
 <body>
@@ -221,8 +215,9 @@
     <section class="container case-study">
         <h1>Emids: Achieving 150% Sales Growth with Honchi</h1>
         <p><strong>Client Overview:</strong> Emids is a renowned provider of digital transformation solutions tailored to healthcare payers, providers, and life sciences companies. Their mission is to create a seamless healthcare experience, but they faced challenges in scaling their sales and expanding into new market segments.</p>
-        
-        <section>
+
+        <!-- Boxed Section for Challenges -->
+        <section class="box">
             <h2><i class="fas fa-exclamation-triangle"></i> The Challenge</h2>
             <p>Despite being a leader in healthcare solutions, Emids found it difficult to maintain consistent sales growth due to several issues:</p>
             <ul>
@@ -231,8 +226,9 @@
                 <li><strong>Sales Team Misalignment:</strong> The sales team needed better training to align with Emids’ strategic goals, resulting in lower-than-expected deal closures and revenue growth.</li>
             </ul>
         </section>
-        
-        <section>
+
+        <!-- Boxed Section for Solutions -->
+        <section class="box">
             <h2><i class="fas fa-lightbulb"></i> Solutions Provided</h2>
             <p>To overcome these challenges, Honchi implemented a multi-pronged sales strategy to help Emids regain momentum and foster growth:</p>
             <ul>
@@ -243,6 +239,7 @@
             </ul>
         </section>
 
+        <!-- Results Section -->
         <section class="results-section">
             <h2><i class="fas fa-trophy"></i> Results</h2>
             <p>As a result of Honchi's strategic interventions, Emids saw significant growth across key performance metrics:</p>
